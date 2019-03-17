@@ -116,7 +116,7 @@ while (i < 1):
 
         if ('wi-fi') in message:
             REMOTE_SERVER = "www.google.com"
-            speak.wifi()
+            speak.Speak()
             rand = ['We are connected']
             speak.Speak(rand, n)
 
@@ -174,7 +174,7 @@ while (i < 1):
             #os.system('rundll32.exe powrprof.dll,SetSuspendState 0,1,0')
 
         if ('music') in message:
-            mus = random.choice(glob.glob(doss + "\\music" + "\\*.mp3"))
+            mus = random.choice(glob.glob(doss + "chougada.mp3"))
             os.system('chown -R user-id:group-id mus')
             os.system('start ' + mus)
             rand = ['start playing']
